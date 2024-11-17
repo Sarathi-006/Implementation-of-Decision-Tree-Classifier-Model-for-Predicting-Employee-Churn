@@ -8,17 +8,25 @@ To write a program to implement the Decision Tree Classifier Model for Predictin
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1.Start the program
-2.attach the given data file
-3.now find the satisfaction level of employee data
-4.find the accuracy and new predict value 5.end the program
-## Program:
+1 Load the Data: Read the employee dataset from a CSV file and check its structure and missing values.
 
+2 Preprocess the Data: Encode the categorical salary column using LabelEncoder().
+
+3 Feature Selection: Select the relevant features (x) and the target variable (y, which is left).
+
+4 Split the Data: Split the data into training and test sets (80%-20%) using train_test_split().
+
+5 Train the Model: Train a Decision Tree Classifier (DecisionTreeClassifier with entropy criterion) on the training data.
+
+6 Evaluate the Model: Predict on the test set, calculate the accuracy, and make a prediction for a new data point.
+## Program:
+```
 /*
 Program to implement the Decision Tree Classifier Model for Predicting Employee Churn.
 Developed by: S.PARTHASARATHI
 RegisterNumber:  212223040144
 */
+```
 ```
 import pandas as pd
 data=pd.read_csv("C:/Users/admin/Downloads/Employee.csv")
